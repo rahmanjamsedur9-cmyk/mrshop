@@ -3,89 +3,236 @@
 <head>
 <title>MR Shop</title>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 
 body{
 font-family: Arial;
 margin:0;
-background:#f2f2f2;
+background:#f5f5f5;
 }
 
 header{
-background:#0a3d62;
+background:#0a7cff;
 color:white;
-padding:20px;
 text-align:center;
-font-size:28px;
+padding:20px;
 }
 
 .products{
 display:grid;
-grid-template-columns:repeat(2,1fr);
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
 gap:15px;
 padding:20px;
 }
 
-.product{
+.card{
 background:white;
-padding:15px;
+padding:10px;
 border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
+box-shadow:0 0 5px rgba(0,0,0,0.1);
 text-align:center;
 }
 
-.product img{
+.card img{
 width:100%;
-border-radius:8px;
+border-radius:10px;
 }
 
 button{
-background:#27ae60;
+background:#ff6600;
 color:white;
 border:none;
 padding:10px;
 border-radius:5px;
+cursor:pointer;
+}
+
+.footer{
+text-align:center;
+padding:20px;
+background:#222;
+color:white;
 }
 
 </style>
-
 </head>
 
 <body>
 
-<header>MR Sports Shop</header>
+<header>
+<h1>MR Shop</h1>
+<p>Welcome to MR Shop</p>
+</header>
 
 <div class="products">
 
-<div class="product">
-<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
-<h3>Sports Shoes</h3>
-<p>1500 টাকা</p>
-<button>Order Now</button>
-</div>
-
-<div class="product">
-<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab">
-<h3>T Shirt</h3>
-<p>800 টাকা</p>
-<button>Order Now</button>
-</div>
-
-<div class="product">
-<img src="https://images.unsplash.com/photo-1575361204480-aadea25e6e68">
+<div class="card">
+<img src="https://via.placeholder.com/200">
 <h3>Football</h3>
-<p>1200 টাকা</p>
-<button>Order Now</button>
+<p>৳1200</p>
+<button onclick="order()">Order</button>
 </div>
 
-<div class="product">
-<img src="https://images.unsplash.com/photo-1599058917765-a780eda07a3e">
+<div class="card">
+<img src="https://via.placeholder.com/200">
 <h3>Cricket Bat</h3>
-<p>2000 টাকা</p>
-<button>Order Now</button>
+<p>৳1500</p>
+<button onclick="order()">Order</button>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/200">
+<h3>Cricket Ball</h3>
+<p>৳300</p>
+<button onclick="order()">Order</button>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/200">
+<h3>Sports Shoes</h3>
+<p>৳2000</p>
+<button onclick="order()">Order</button>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/200">
+<h3>Jersey</h3>
+<p>৳900</p>
+<button onclick="order()">Order</button>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/200">
+<h3>Sports Bag</h3>
+<p>৳800</p>
+<button onclick="order()">Order</button>
 </div>
 
 </div>
+
+<div class="footer">
+<p>Order via bKash: 01779243917</p>
+</div>
+
+<script>
+
+function order(){
+alert("Order করতে bKash নাম্বারে পেমেন্ট করুন: 01779243917");
+}
+
+</script>
 
 </body>
-</html>
+</html<!DOCTYPE html>
+<html>
+<head>
+<title>MR Shop</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background:#f5f5f5;
+}
+
+header{
+background:#0a7cff;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:15px;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:10px;
+border-radius:10px;
+box-shadow:0 0 5px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+button{
+background:#ff6600;
+color:white;
+border:none;
+padding:10px;
+border-radius:5px;
+cursor:pointer;
+}
+
+.footer{
+text-align:center;
+padding:20px;
+background:#222;
+color:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>MR Shop</h1>
+<p>Welcome to MR Shop</p>
+</header>
+
+<div class="products">
+
+<div class="card">
+<img src="https://via.placeholder.com/200">
+<h3>Football</h3>
+<p>৳1200</p>
+<button onclick="order()">Order</button>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/200">
+<h3>Cricket Bat</h3>
+<p>৳1500</p>
+<button onclick="order()">Order</button>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/200">
+<h3>Cricket Ball</h3>
+<p>৳300</p>
+<button onclick="order()">Order</button>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/200">
+<h3>Sports Shoes</h3>
+<p>৳2000</p>
+<button onclick="order()">Order</button>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/200">
+<h3>Jersey</h3>
+<p>৳900</p>
+<button onclick="order()">Order</button>
+</div>
+<img src="shoes.jpg" width="200">
+<div class="card">
+<img src="football.jpg" width="200">
+<h3>Football</h3>
+<p>৳1200</p>
+<button>Order</button>
+</div>
